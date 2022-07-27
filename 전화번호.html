@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+            <h1 class="master-title"><a href="index.html">홈</a></h1>
+
+          
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">음식</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="카레.html">카레</a></li>
+                  <li class="inner-menu-item">
+                    <a href="곱창.html">곱창</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">음악</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="index(1).html">호랑수월가</a></li>
+                    
+                    </li>
+                  </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">개인정보</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="mbti.html">mbti</a></li>
+                    <li class="inner-menu-item"><a href="전화번호.html">전화번호와 이메일</a></li>
+                  </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">취미</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="게임.html">게임</a></li>
+                    <li class="inner-menu-item"><a href="웹툰.html">웹툰</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+                <h1 class="article-title">
+                    전화번호 : 010-6298-6217
+
+
+                    이메일   : fivedog321@gmail.com
+                </h1>
+            
+            
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>아이스크림</h3>
+            <ul>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>최신글</h3>
+            <ul>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 유지완</a>
+      </footer>
+    </div>
+  </body>
+</html>
